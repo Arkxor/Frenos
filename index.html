@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Frenos Mercedes</title>
+    <meta http-equiv="Expires" content="0">
+
+<meta http-equiv="Last-Modified" content="0">
+
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+
+<meta http-equiv="Pragma" content="no-cache">
+</head>
+<body>
+
+    <style>
+        input{
+            align-items: inline;
+        }
+        
+        body{
+            background-color: black;
+            color:aliceblue;
+            text-align: center;
+            font-size: x-large;
+        }
+       
+        h1{
+            color:aliceblue;
+            text-align: center;
+        }
+        #bborrar{
+            margin: 10px;
+            height: 40px;
+            width: 200px;
+
+        }
+        #bcalcular{
+            margin: 10px;
+            height: 40px;
+            width: 200px;
+        }
+    </style>
+
+<form>
+    <div>
+        <h1>Frenos Mercedes</h1>
+        <label for="vcodigo">Codigo:  </label>
+      <input
+        type="text"
+        id="idvcodigo"
+        name="vcodigo"
+        placeholder="Codigo" /><br><br>
+      <label for="v53">1º EJE:  </label>
+      <input
+        type="text"
+        id="idv53"
+        name="v53"
+        placeholder="Valor BS 53" />
+        <input
+        type="text"
+        id="idv54"
+        name="v54"
+        placeholder="Valor BS 54" />
+        <br><br>
+        <label for="v55">2º EJE:  </label>
+      <input
+        type="text"
+        id="idv55"
+        name="v55"
+        placeholder="Valor BS 55" />
+        <input
+        type="text"
+        id="idv56"
+        name="v56"
+        placeholder="Valor BS 56" />
+        <br><br>
+        <label for="v57">3º EJE:  </label>
+        <input
+          type="text"
+          id="idv57"
+          name="v57"
+          placeholder="Valor BS 57" />
+          <input
+          type="text"
+          id="idv58"
+          name="v58"
+          placeholder="Valor BS 58" />
+          <br><br>
+        <button onclick="calcular()" id="bcalcular">Calcular</button>
+        <button onclick="location.reload()" id="bborrar">Borrar</button>
+        
+    </div>
+
+  </form>
+ 
+  </body>
+<script>
+    var div = 2.5
+
+    function calcular(){
+    var vcodigo = document.getElementById('idvcodigo').value;
+    var v53 = document.getElementById('idv53').value;
+    var v54 = document.getElementById('idv54').value;
+    var v55 = document.getElementById('idv55').value;
+    var v56 = document.getElementById('idv56').value;
+    var v57 = document.getElementById('idv57').value;
+    var v58 = document.getElementById('idv58').value;
+    v53 = 100-(v53/div);
+    v54 = 100-(v54/div);
+    v55 = 100-(v55/div);
+    v56 = 100-(v56/div);
+    v57 = 100-(v57/div);
+    v58 = 100-(v58/div);
+    document.body.innerHTML +="<br>********************************************************************<br>"
+    document.body.innerHTML +="<h2>Codigo vehiculo: "+vcodigo+"</h2>"
+    document.body.innerHTML += "<h2>1º Eje</h2><h2>" +" Izq:   "+v53+" %----------Dch:   "+v54+"%<br></h2>";
+    document.body.innerHTML += "<h2>2º Eje</h2><h2>" +" Izq:   "+v55+" %----------Dch:   "+v56+"%<br></h2>";
+    document.body.innerHTML += "<h2>3º Eje</h2><h2>" +" Izq:   "+v57+" %----------Dch:   "+v58+"%</h2>";
+    document.body.innerHTML +="<h3>Cantidades de pastillas de freno restantes</h3><br>"
+    document.body.innerHTML +="<br>********************************************************************"
+   
+    }
+</script>
+</html>
