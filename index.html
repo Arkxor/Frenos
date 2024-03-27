@@ -17,6 +17,10 @@
     <style>
         input{
             align-items: inline;
+            width: 40px;
+        }
+        .ccodigo{
+            width: 100px;
         }
         
         body{
@@ -51,42 +55,42 @@
         type="text"
         id="idvcodigo"
         name="vcodigo"
-        placeholder="Codigo" /><br><br>
+        placeholder="Codigo" class="ccodigo" /><br><br>
       <label for="v53">1º EJE:  </label>
       <input
         type="text"
         id="idv53"
         name="v53"
-        placeholder="Valor BS 53" />
+        placeholder="BS 53" />
         <input
         type="text"
         id="idv54"
         name="v54"
-        placeholder="Valor BS 54" />
+        placeholder="BS 54" />
         <br><br>
         <label for="v55">2º EJE:  </label>
       <input
         type="text"
         id="idv55"
         name="v55"
-        placeholder="Valor BS 55" />
+        placeholder="BS 55" />
         <input
         type="text"
         id="idv56"
         name="v56"
-        placeholder="Valor BS 56" />
+        placeholder="BS 56" />
         <br><br>
         <label for="v57">3º EJE:  </label>
         <input
           type="text"
           id="idv57"
           name="v57"
-          placeholder="Valor BS 57" />
+          placeholder="BS 57" />
           <input
           type="text"
           id="idv58"
           name="v58"
-          placeholder="Valor BS 58" />
+          placeholder="BS 58" />
           <br><br>
         <button onclick="calcular()" id="bcalcular">Calcular</button>
         <button onclick="location.reload()" id="bborrar">Borrar</button>
@@ -115,9 +119,9 @@
     v58 = 100-(v58/div);
     document.body.innerHTML +="<br>********************************************************************<br>"
     document.body.innerHTML +="<h2>Codigo vehiculo: "+vcodigo+"</h2>"
-    document.body.innerHTML += "<h2>1º Eje</h2><h2>" +" Izq:   "+v53+" %----------Dch:   "+v54+"%<br></h2>";
-    document.body.innerHTML += "<h2>2º Eje</h2><h2>" +" Izq:   "+v55+" %----------Dch:   "+v56+"%<br></h2>";
-    document.body.innerHTML += "<h2>3º Eje</h2><h2>" +" Izq:   "+v57+" %----------Dch:   "+v58+"%</h2>";
+    document.body.innerHTML += "<h2>1º Eje</h2><h2>" +" Izq:   "+v53+" %-----Dch:   "+v54+"%<br></h2>";
+    document.body.innerHTML += "<h2>2º Eje</h2><h2>" +" Izq:   "+v55+" %-----Dch:   "+v56+"%<br></h2>";
+    document.body.innerHTML += "<h2>3º Eje</h2><h2>" +" Izq:   "+v57+" %-----Dch:   "+v58+"%</h2>";
     document.body.innerHTML +="<h3>Cantidades de pastillas de freno restantes</h3><br>"
     document.body.innerHTML +="<br>********************************************************************"
    
