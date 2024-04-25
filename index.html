@@ -111,17 +111,17 @@
     var v56 = document.getElementById('idv56').value;
     var v57 = document.getElementById('idv57').value;
     var v58 = document.getElementById('idv58').value;
-    v53 = 100-(v53/div);
-    v54 = 100-(v54/div);
-    v55 = 100-(v55/div);
-    v56 = 100-(v56/div);
-    v57 = 100-(v57/div);
-    v58 = 100-(v58/div);
+    v53 = Math.round(100-(v53/div));
+    v54 = Math.round(100-(v54/div));
+    v55 = Math.round(100-(v55/div));
+    v56 = Math.round(100-(v56/div));
+    v57 = Math.round(100-(v57/div));
+    v58 = Math.round(100-(v58/div));
     document.body.innerHTML +="<br>********************************************************************<br>"
     document.body.innerHTML +="<h2>Codigo vehiculo: "+vcodigo+"</h2>"
-    document.body.innerHTML += "<h2>1º Eje</h2><h2>" +" Izq:   "+v53+" %-----Dch:   "+v54+"%<br></h2>";
-    document.body.innerHTML += "<h2>2º Eje</h2><h2>" +" Izq:   "+v55+" %-----Dch:   "+v56+"%<br></h2>";
-    document.body.innerHTML += "<h2>3º Eje</h2><h2>" +" Izq:   "+v57+" %-----Dch:   "+v58+"%</h2>";
+    document.body.innerHTML += "<h2>1º Eje</h2><h2>" +" Izq:&nbsp"+v53+" %&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDch:&nbsp"+v54+"%<br></h2>";
+    document.body.innerHTML += "<h2>2º Eje</h2><h2>" +" Izq:&nbsp"+v55+" %&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDch:&nbsp"+v56+"%<br></h2>";
+    document.body.innerHTML += "<h2>3º Eje</h2><h2>" +" Izq:&nbsp"+v57+" %&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDch:&nbsp"+v58+"%</h2>";
     document.body.innerHTML +="<h3>Cantidades de pastillas de freno restantes</h3><br>"
     document.body.innerHTML +="<br>********************************************************************"
    
